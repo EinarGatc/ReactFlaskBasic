@@ -1,13 +1,12 @@
-import React, { useState, useEffect} from 'react'
-import SearchBar from './components/SearchBar';
+import React from 'react'
 import "./App.css"
+import { SearchResults } from './components/SearchResults';
 function App() {
 
   return (
     <div className='App'>
-      <SearchBar placeholder="Input a prompt..."/>
+      <SearchResults/>
     </div>
-    
   )
 }
 
