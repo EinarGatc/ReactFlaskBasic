@@ -1,10 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .logo-container {
+    display: flex;
+    justify-content: right; 
+}
+
+.logo {
+    width: 100px; 
+    height: auto; 
+} */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(255, 231, 195);
+    height: 225px;
+}
+
+.logo {
+    display:flex;
+    justify-content: center;
+    width: 130px; /* Adjust as needed */
+    height: auto;
+    margin-bottom:10px;
+}
+
+.header #title{
+    margin-top: 10px;
+    display:flex;
+    font-size: 35px;
+    color:rgb(224, 165, 112);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.header #subtitle{
+    margin-top: 10px;
+    display:flex;
+    font-size: 18px;
+    color:rgb(224, 165, 112);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 .SearchResults {
     display: inline-block;
-    position: aboslute;
     top: 50%;
     left: 50%;
 
     justify-content: center;
     align-items: center;
-    height: 5vh;
+    /* height: 5vh; */
 }

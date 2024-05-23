@@ -3,8 +3,8 @@ from document_data import get_documents, get_data_from_json
 from Assignment3.query import find_query
 import time
 app = Flask(__name__)
-filepath_index = "/Users/egatchal/Desktop/Projects/ReactFlaskBasic/flask-server/Assignment3/index.txt"
-filepath_index_list = "/Users/egatchal/Desktop/Projects/ReactFlaskBasic/flask-server/Assignment3/index_list.txt"
+filepath_index = "/Users/egatchal/Desktop/Projects/index_data/index.txt"
+filepath_index_list = "/Users/egatchal/Desktop/Projects/index_data/index_list.txt"
 query_data= {}
 # members API Route
 @app.route("/members")

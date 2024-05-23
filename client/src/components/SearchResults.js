@@ -3,6 +3,7 @@ import UrlResult from './UrlResult'
 import SearchBar from './SearchBar'
 import './UrlResult.css'
 import './SearchResults.css'
+import antZotLogo from '/Users/egatchal/Desktop/Projects/ReactFlaskBasic/client/src/components/ant.png';
 
 export const SearchResults = () => {
     const [data, setData] = useState([{}]);
@@ -21,6 +22,15 @@ export const SearchResults = () => {
         <div>
 
             <div> 
+                <div className="header">
+                    
+                    <img src={antZotLogo} alt="Logo" className="logo"/>
+    
+                    <p id="title">{'\u00A0'}{'\u00A0'}Information Retrieval Spring 2024</p>
+                    <p id="subtitle">{'\u00A0'}{'\u00A0'}Hearty Parrenas, Einar Gatchalian, Jefferson Mclinden</p>
+                </div>
+                
+            
                 <form className='SearchResults'>
                     <SearchBar onSearch={handleSearch} placeholder="Input a prompt..."/>
                     <ol className='url-list' style={style}>
@@ -29,6 +39,7 @@ export const SearchResults = () => {
                         ))}
                     </ol>   
                 </form>
+                
             </div>
             
         </div>
